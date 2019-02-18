@@ -1,7 +1,8 @@
 # jlapse
 jlapse can take screenshot and also take screenshot at an interval.Good for taking screenshot for timelapse video.
 All the commands are by default optional.
-Available commands:
+
+# Available commands:
   1.-s (start frame number,default is 1)
   2.-n (number of frames, or number of screen shot to take,default is 1)
   3.-d (delay time,minimum delay time is 1 second,default is 1)
@@ -12,7 +13,7 @@ Available commands:
   7.-o (output directory,a path to where the images will be saved,default to the current directory where the main.py is)
   8.-h (display help)
 
-How to use it?
+# How to use it?
 1.python main.py  (will take one screen shot, when not a single argument is passed.)
 2.python main.py -h (will show the help.)
 3.python main.py -s 1 -n 5 -d 2 (will take 5 screenshots at an interval of 2 second.)
