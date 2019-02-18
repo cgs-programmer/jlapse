@@ -3,6 +3,7 @@
 # date 16-february-2019
 # a simple screenshot tool and timelapse creator tool
 import time
+import ctypes
 import sys
 from PIL import ImageGrab,Image
 from c_parse.c_parse import CommandLineParser
@@ -79,6 +80,8 @@ class JLapse(object):
 	"""
 	def __init__(self):
 		# -------------------------------------------------
+		user32 = ctypes.windll.user32
+		screenWidth,screenHeight = user32.GetSystemMetrics(0),user32.GetSystemMetrics(1)
 		self.command_handle = HandleCommandLineArguments()
 		commands_list = self.command_handle.get_commands_list()
 		len_of_commands_list = self.command_handle.get_len_of_commands_list()
@@ -90,7 +93,7 @@ class JLapse(object):
 		self.delay_time = 1
 		self.name_prefix = 'screenshot_'
 		self.extension = 'png'
-		self.size = '1280x720'
+		self.size = '{0}x{1}'.format(screenWidth,screenHeight)
 		self.output_directory = '.'
 		self.help_ = False
 		# -------------------------------------------------
