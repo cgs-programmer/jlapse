@@ -3,7 +3,7 @@ jlapse can take screenshot and also take screenshot at an interval.Good for taki
 All the commands are by default optional.
 
 # Available commands:
-  1.-s (start frame number,default is 1)
+1.-s (start frame number,default is 1)
   2.-n (number of frames, or number of screen shot to take,default is 1)
   3.-d (delay time,minimum delay time is 1 second,default is 1)
   4.-p (name prefix, will be used as the image name,eg, if name prefix is screen_, then the image name will be like screen_23.png,
