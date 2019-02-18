@@ -1,0 +1,6 @@
+package_name = c_parse
+created = 02-02-2019
+by: Joseph Chhetri
+
+what is it?
+=> It is a simple command line arguments parser.It lets you create command line program with ease.All the arguments are by default optional.
