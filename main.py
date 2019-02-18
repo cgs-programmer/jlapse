@@ -80,8 +80,11 @@ class JLapse(object):
 	"""
 	def __init__(self):
 		# -------------------------------------------------
-		user32 = ctypes.windll.user32
-		screenWidth,screenHeight = user32.GetSystemMetrics(0),user32.GetSystemMetrics(1)
+		try:
+			user32 = ctypes.windll.user32
+			screenWidth,screenHeight = user32.GetSystemMetrics(0),user32.GetSystemMetrics(1)
+		except:
+			screenWidth,screenHeight = 1280,720
 		self.command_handle = HandleCommandLineArguments()
 		commands_list = self.command_handle.get_commands_list()
 		len_of_commands_list = self.command_handle.get_len_of_commands_list()
