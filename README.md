@@ -1,6 +1,6 @@
 # jlapse
 jlapse can take screenshot and also take screenshot at an interval.Good for taking screenshots for timelapse video.
-All the command line arguments are by default optional.Should work on both python 2.x and python 3.x.
+All the command line arguments are by default optional.Should work on both python 2.x and python 3.x. You need to have PIL installed to be able to use this program.
 
 # Available commands:
 1. -s (start frame number,default is 1)
