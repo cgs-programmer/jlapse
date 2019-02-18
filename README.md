@@ -1,6 +1,6 @@
 # jlapse
-jlapse can take screenshot and also take screenshot at an interval.Good for taking screenshot for timelapse video.
-All the commands are by default optional.
+jlapse can take screenshot and also take screenshot at an interval.Good for taking screenshots for timelapse video.
+All the command line arguments are by default optional.
 
 # Available commands:
 1. -s (start frame number,default is 1)
